@@ -4,6 +4,9 @@
 <title>Home</title>
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
 <link href='http://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <script src="scripts/functions.js"></script>
 <script src="scripts/jquery-2.1.4.min.js"></script>
 
@@ -20,22 +23,14 @@
 </script>
 </head>
 
-<body onload="defaultfunc()">
+<body>
    <div class="container2">
-      <form method="get" id="search" class="formsearchbar">
-        <input id="googlesearch" type="search" name="q" class="searchbar" placeholder="Search..." autofocus="autofocus" autocomplete="off"></input>
-        <select id="searchSource" onchange="dropdownSelect()" class="searchselect">
-          <option value="https://google.ca/search" selected>Google</option>
-          <option value="https://github.com/search">Github</option>
-          <option value="http://www.reddit.com/search">Reddit</option>
-        </select>
-      </form>
       <div class="tiles">
-
         <div class="row">
-          <div class="boxes box1">
-            <h2 class="header">Entertainment</h2>
-            <hr/>
+          <div class="boxes box1 demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Entertainment</h2>
+            </div>
             <ul class="links">
               <li><a href="http://boards.4chan.org/a/" class="bigLink">/a/ - Anime and Manga</a></li>
               <li><a href="http://boards.4chan.org/g/" class="bigLink">/g/ - Technology</a></li>
@@ -52,7 +47,6 @@
     			          setInterval("getSomeTime()", 1000);
               </script>
             </h1>
-            <hr/>
             <h2 class="header" id="date1">
               <script type="text/javascript">
                 getSomeDate();
@@ -60,9 +54,10 @@
               </script>
             </h2>
           </div>
-          <div class="boxes box3">
-            <h2 class="header">Programming</h2>
-            <hr/>
+          <div class="boxes box3 demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">Reddit</h2>
+            </div>
             <ul class="links">
               <li><a href="https://github.com/" class="bigLink">Github</a></li>
               <li><a href="http://stackoverflow.com/" class="bigLink">Stack Overflow</a></li>
@@ -80,7 +75,6 @@
         <div class="row">
           <div class="boxes box5">
             <h2 class="header">Miscellaneous</h2>
-            <hr/>
             <ul class="links">
               <li><a href="https://www.coursera.org" class="bigLink">Coursera</a></li>
               <li><a href="http://www.last.fm/" class="bigLink">Last.fm</a></li>
@@ -91,7 +85,6 @@
           </div>
           <div class="boxes box6">
             <h2 class="header">Tools</h2>
-            <hr/>
             <ul class="links">
               <li><a href="https://mail.google.com" class="bigLink">Gmail</a></li>
               <li><a href="https://login.live.com" class="bigLink">Windows Live Mail</a></li>

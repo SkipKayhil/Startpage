@@ -1,17 +1,3 @@
-function defaultfunc() {
-
-  document.getElementById("search").action = "https://google.ca/search";
-
-}
-
-function dropdownSelect(){
-
-  var x = document.getElementById('searchSource').value;
-  document.getElementById("search").action = x;
-
-
-}
-
 function getSomeTime() {
 
   var date = new Date();
@@ -48,7 +34,7 @@ function getSomeTime() {
       hour = 12;
       hour = hour.toString();
       utc2 = " AM"
-	  
+
     }
   else {
 
