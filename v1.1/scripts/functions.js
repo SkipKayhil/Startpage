@@ -18,31 +18,7 @@ function getSomeTime() {
 
   }
 
-  if(date.getHours() >= 12){
-
-    if(date.getHours() > 12){
-
-      hour = date.getHours() - 12;
-      hour = hour.toString();
-
-    }
-    utc2 = " PM";
-
-  }
-  else if(date.getHours() == 0){
-
-      hour = 12;
-      hour = hour.toString();
-      utc2 = " AM"
-
-    }
-  else {
-
-    utc2 = " AM"
-
-  }
-
-  document.getElementById('clock').innerHTML = hour + ":" + minutes + ":" + seconds + utc2;
+  document.getElementById('clock').innerHTML = hour + " " + minutes + " " + seconds;
 
 }
 
@@ -50,33 +26,34 @@ function getSomeDate() {
 
     var date2 = new Date();
     var weekday = new Array(7);
-      weekday[0]=  "Sunday";
-      weekday[1] = "Monday";
-      weekday[2] = "Tuesday";
-      weekday[3] = "Wednesday";
-      weekday[4] = "Thursday";
-      weekday[5] = "Friday";
-      weekday[6] = "Saturday";
+      weekday[0]=  "SUN";
+      weekday[1] = "MON";
+      weekday[2] = "TUE";
+      weekday[3] = "WED";
+      weekday[4] = "THU";
+      weekday[5] = "FRI";
+      weekday[6] = "SAT";
     var day = weekday[date2.getDay()];
       day = day.toString();
     var month = new Array(12);
-      month[0] = "January";
-      month[1] = "February";
-      month[2] = "March";
-      month[3] = "April";
-      month[4] = "May";
-      month[5] = "June";
-      month[6] = "July";
-      month[7] = "August";
-      month[8] = "September";
-      month[9] = "October";
-      month[10] = "November";
-      month[11] = "December";
+      month[0] = "JAN";
+      month[1] = "FEB";
+      month[2] = "MAR";
+      month[3] = "APR";
+      month[4] = "MAY";
+      month[5] = "JUN";
+      month[6] = "JUL";
+      month[7] = "AUG";
+      month[8] = "SEP";
+      month[9] = "OCT";
+      month[10] = "NOV";
+      month[11] = "DEC";
     var monthText = month[date2.getMonth()];
       monthText = monthText.toString();
     var monthNum = date2.getDate().toString();
-    var year = date2.getFullYear().toString();
 
-  document.getElementById('date1').innerHTML = day + ", " + monthText + " " + monthNum + ", " + year;
-
+  document.getElementById('date1').innerHTML = day + " <b>" + monthNum + "</b> " + monthText;
+  document.getElementById('dow').innerHTML = day + " ";
+  document.getElementById('date').innerHTML = monthNum + " ";
+  document.getElementById('month').innerHTML = monthText;
 }
