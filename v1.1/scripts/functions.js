@@ -4,7 +4,6 @@ function getSomeTime() {
   var hour = date.getHours().toString();
   var minutes = date.getMinutes().toString()
   var seconds = date.getSeconds().toString();
-  var utc2;
 
   if (date.getMinutes() < 10) {
 
@@ -53,7 +52,4 @@ function getSomeDate() {
     var monthNum = date2.getDate().toString();
 
   document.getElementById('date1').innerHTML = day + " <b>" + monthNum + "</b> " + monthText;
-  document.getElementById('dow').innerHTML = day + " ";
-  document.getElementById('date').innerHTML = monthNum + " ";
-  document.getElementById('month').innerHTML = monthText;
 }

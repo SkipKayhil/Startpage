@@ -11,22 +11,6 @@ a:link {
   color: rgba(0,0,0,0.55);
 
 }
-a:visited {
-
-  color: rgba(0,0,0,0.55);
-
-}
-a:hover {
-
-  color: rgba(0,0,0,0.55);
-  letter-spacing: 0.7px;
-
-}
-a:active {
-
-  color: rgba(0,0,0,0.55);
-
-}
 li {
 
   margin-bottom: 5px;
